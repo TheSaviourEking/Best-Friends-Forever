@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install flask
+RUN pip install -r requirements.txt
 
 ENV FLASK_APP=app.py
 
