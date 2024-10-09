@@ -11,7 +11,10 @@ db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
-    CORS(app)
+
+    # Comment out cors for production we serving from same server
+    # CORS(app)
+    
     app.config.from_object(Config)
 
     db.init_app(app)
