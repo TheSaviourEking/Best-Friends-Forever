@@ -3,7 +3,8 @@ import Navbar from './components/Navbar'
 import { useState } from 'react'
 import UserGrid from './components/UserGrid'
 
-export const BACKEND_API_URL = 'http://localhost:5000/api';
+// export const BACKEND_API_URL = 'http://localhost:5000/api';
+export const BACKEND_API_URL = 'https://best-friends-forever.onrender.com/api';
 
 function App() {
   const [users, setUsers] = useState([])
