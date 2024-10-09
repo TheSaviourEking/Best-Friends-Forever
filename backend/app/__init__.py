@@ -9,7 +9,8 @@ app = Flask(__name__)
 CORS(app)
 
 app.config.from_object(Config)
-db = SQLAlchemy(app)
+# db = SQLAlchemy(app)
+db.init_app(app)
 
 frontend_folder = os.path.join(os.getcwd(), "..", "frontend")
 dist_folder = os.path.join(frontend_folder, "dist")
